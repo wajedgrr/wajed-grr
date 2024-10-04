@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Travel Offer</title>
+
+
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+       <strong><h1 class="h1">Add a Travel Offer</h1></strong> <label for="title" id="label">Title</label>
+                    <input type="text" id="title" name="title" placeholder="Title" >
+                    <div id="titleError" class="error-message"></div>
+                <label for="destination" id="label">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Destination">
+                    <div id="destinationError" class="error-message"></div>
+                
+                <label for="departuredate" id="label">Departure Date</label>
+             
+                    <input type="date" id="departuredate" name="departure date">
+                    <div id="departureError" class="error-message"></div>
+                <label for="returndate" id="label">Return Date</label>
+              
+                    <input type="date" id="returndate" name="return date">
+                    <div id="returnError" class="error-message"></div>
+               
+            <label for="price" id="label">Price</label>
+                    <input type="text" id="price" name="price" placeholder="Price">
+                    <div id="priceError" class="error-message"></div>
+              <label for="availibility" id="label">Availibility</label>
+                    <input type="checkbox" id="availibility" name="availibility" placeholder="Availibility">
+                    <label for="category" id="label">Category</label>
+               
+                    <select  id="select">
+                        <option value="" disabled selected>Select Adventure</option>
+                        <option>Adventure 1</option>
+                        <option>Adventure 2</option>
+                        <option>Adventure 3</option>
+                    </select>
+            
+                    <center><input type="submit" value="Add Offer" class="addoffer"></center>
+            
+        
+    </form>
+    <script src="ex2.js"></script>
+</body>
+</html>

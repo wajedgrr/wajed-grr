@@ -1,0 +1,65 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Navbar Styling */
+nav {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+}
+
+nav img {
+    width: 20%;
+}
+
+/* Section and Table Styling */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px;
+    width: 300px;
+}
+
+td {
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Preformatted Text */
+pre {
+    font-family: inherit;
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Optional Row Styling */
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Horizontal Rule Styling */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}

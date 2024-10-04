@@ -1,0 +1,88 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 20px 0;
+}
+
+nav img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+section {
+    margin: 30px auto;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    border-spacing: 20px;
+}
+
+caption {
+    caption-side: top;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #555;
+    vertical-align: bottom;
+    padding-left: 10px;
+}
+
+table img {
+    width: 100px;
+}
+
+td img {
+    display: block;
+    margin: 0 auto;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav img {
+        width: 100%;
+    }
+
+    td img {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
