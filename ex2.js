@@ -19,8 +19,17 @@ document.getElementById("form").addEventListener("submit", function(event) {
 
     // Vérification du champ "Title"
     if (titre.length < 3) {
-        document.getElementById("titleError").textContent = "Veuillez entrer un nom.";
+        document.getElementById("titleError").textContent = "Veuillez entrer un title.";
         valid = false;
+        titleError.style.color="red";
+
+    }
+    else
+    {
+        document.getElementById("titleError").textContent = "Correct";
+        valid=true;
+        titleError.style.color="green";
+
     }
 
     // Vérification du champ "Destination"
@@ -28,31 +37,56 @@ document.getElementById("form").addEventListener("submit", function(event) {
     if (!Destination.test(destination)) {
         document.getElementById("destinationError").textContent = "La destination doit contenir uniquement des lettres et au moins 3 caractères.";
         valid = false;
+        destinationError.style.color="red";
+    }
+    else
+    {
+        document.getElementById("destinationError").textContent = "Correct";
+        valid=true;
+        destinationError.style.color="green";
     }
 
     // Vérification des dates
     if (isNaN(dateDepart.getTime())) {
         document.getElementById("departureError").textContent = "Veuillez entrer une date de départ valide.";
         valid = false;
+        departureError.style.color="red";
+    }
+    else
+    {
+        document.getElementById("departureError").textContent = "Correct";
+        valid=true;
+        departureError.style.color="green";
     }
 
     if (isNaN(dateRetour.getTime())) {
         document.getElementById("returnError").textContent = "Veuillez entrer une date de retour valide.";
         valid = false;
+        returnError.style.color="red";
     } else if (dateRetour <= dateDepart) {
         document.getElementById("returnError").textContent = "La date de retour doit être ultérieure à la date de départ.";
         valid = false;
+        returnError.style.color="red";
+    }
+    else
+    {
+        document.getElementById("returnError").textContent = "Correct";
+        valid=true;
+        returnError.style.color="green";
     }
 
     // Vérification du champ "Price"
     if (isNaN(prix) || prix <= 0) {
         document.getElementById("priceError").textContent = "Le prix doit être un nombre positif.";
         valid = false;
+        priceError.style.color="red";
+    }
+    else
+    {
+        document.getElementById("priceError").textContent = "Correct";
+        valid=true;
+        priceError.style.color="green";
     }
 
-    // Si tout est valide, soumettre le formulaire
-    if (valid) {
-        alert("Formulaire soumis avec succès !");
-        // Ici tu peux ajouter l'envoi du formulaire ou tout autre traitement nécessaire
-    }
+    
 });

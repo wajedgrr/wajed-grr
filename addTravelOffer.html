@@ -1,82 +1,51 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Add Travel Offer</title>
-        <script src="ex2.js"></script>
-        <link rel="stylesheet" href="addTravelOffer.css">
-        <style>
-            .error-message {
-                color: black;
-                font-size: 0.9em;
-            }
-        </style>
-    </head>
-    <body>
-        <form id="form">
-            <table border="2">
-                <caption><strong><h1 class="h1">Add a Travel Offer</h1></strong></caption>
-                <tr>
-                    <td> <label for="title" id="label">Title</label></td>
-                    <td>
-                        <input type="text" id="title" name="title" placeholder="Title" >
-                        <div id="titleError" class="error-message"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="destination" id="label">Destination</label></td>
-                    <td>
-                        <input type="text" id="destination" name="destination" placeholder="Destination">
-                        <div id="destinationError" class="error-message"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="departure date" id="label">Departure Date</label></td>
-                    <td>
-                        <input type="date" id="departuredate" name="departure date">
-                        <div id="departureError" class="error-message"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="return date" id="label">Return Date</label></td>
-                    <td>
-                        <input type="date" id="returndate" name="return date">
-                        <div id="returnError" class="error-message"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="price" id="label">Price</label></td>
-                    <td><input type="text" id="price" name="price" placeholder="Price"></td>
-                </tr>
-                <tr>
-                    <td><label for="availibility" id="label">Availibility</label></td>
-                    <td>
-                        <input type="checkbox" id="availibility" name="availibility" placeholder="Availibility">
-                        <div id="priceError" class="error-message"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="category" id="label">Category</label></td>
-                    <td>
-                        <select  id="select">
-                            <option value="" disabled selected>
-                                Select Adventure
-                            </option>
-                            <option>
-                                Adventure 1
-                            </option>
-                            <option>
-                                Adventure 2
-                            </option>
-                            <option>
-                                Adventure 3
-                            </option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><center><input type="submit" value="Add Offer" class="addoffer" onclick="validerFormulaire(event)"></center></td>
-                </tr>
-            </table>
-        </form>
-    </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Travel Offer</title>
+    <link rel="stylesheet" href="addTravelOffer.css">
+</head>
+<body>
+    <form id="form">
+       <strong><h1 class="h1">Add a Travel Offer</h1></strong>
+
+       <label for="title" id="label">Title</label>           
+       <input type="text" id="title" name="title" placeholder="Title" >
+       <div id="titleError" class="error-message"></div>
+
+       <label for="destination" id="label">Destination</label>
+       <input type="text" id="destination" name="destination" placeholder="Destination">
+       <div id="destinationError" class="error-message"></div>  
+        
+       <label for="departuredate" id="label">Departure Date</label>
+       <input type="date" id="departuredate" name="departure date">
+       <div id="departureError" class="error-message"></div>
+
+       <label for="returndate" id="label">Return Date</label>
+       <input type="date" id="returndate" name="return date">
+       <div id="returnError" class="error-message"></div>
+
+       <label for="price" id="label">Price</label>
+       <input type="text" id="price" name="price" placeholder="Price">
+       <div id="priceError" class="error-message"></div>
+
+       <label for="availibility" id="label">Availibility</label>
+       <input type="checkbox" id="availibility" name="availibility" placeholder="Availibility">
+
+       <label for="category" id="label">Category</label>
+       <select  id="select">
+            <option value="" disabled selected>Select Adventure</option>
+            <option>Adventure 1</option>
+            <option>Adventure 2</option>
+            <option>Adventure 3</option>
+        </select>
+    <center>
+        <input type="submit" value="Add Offer" class="addoffer">
+        <td colspan="2"><center><input type="submit" value="Add Offer" class="addoffer" onclick="validerFormulaire(event)"></center></td>
+    </center>
+    </form>
+    <script src="addOffer.js"></script>
+    <script src="ex2.js"></script>
+</body>
 </html>
